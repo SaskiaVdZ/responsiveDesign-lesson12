@@ -5,17 +5,18 @@ body {
     color: #242635;
     height: 100vh;
     width: 100%;
-    margin:0, auto;
+    margin: 0, auto;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    margin: 50px 100px;
+    margin: 50px 50px;
+    width: 1440px;
 }
 
 .logo {
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo 2';
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
@@ -24,8 +25,9 @@ body {
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: baseline;
-    width: 1440px;
+    width: 100%;
 }
 
 ul {
@@ -38,14 +40,19 @@ li {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 30px;
+}
+
+.meatball-menu {
+    display: none;
 }
 
 .section1-home {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .heading-home {
@@ -60,4 +67,90 @@ li {
     font-size: 22px;
     font-weight: 400;
     line-height: 33px;
+    width: 410px;
 }
+
+
+
+@media (max-width: 768px) {
+    
+    .container {
+        max-width: 768px;
+    }
+
+    nav {
+        max-width: 768px;
+        justify-content: space-around;
+    }
+
+    .section1-home {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .paragraph1-home {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .image-home {
+        max-width: 617px;
+        max-height: 512px;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    .container {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        overflow: hidden;
+    }
+
+    nav {
+        max-width: 320px;
+        justify-content: flex-start;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .meatball-menu {
+        position: absolute;
+        display: block;
+        top: 30px;
+        left: 270px;
+        width: 100%;
+    }
+
+    .section1-home {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .heading-home {
+        text-align: center;
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .paragraph1-home {
+        text-align: center;
+        margin-bottom: 45px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .image-home {
+        max-width: 256px;
+        max-height: 284px;
+    }
+}
+
+
+
+
+
