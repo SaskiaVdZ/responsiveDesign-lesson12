@@ -109,6 +109,8 @@ li {
         overflow: hidden;
     }
 
+   
+
     nav {
         max-width: 320px;
         justify-content: flex-start;
@@ -121,14 +123,15 @@ li {
     .meatball-menu {
         position: absolute;
         display: block;
-        top: 30px;
-        left: 270px;
-        width: 100%;
+        top: 70px;
+        left: 300px;
+        
     }
 
     .section1-home {
         flex-direction: column;
         align-content: center;
+        justify-content: center;
     }
 
     .heading-home {
@@ -142,6 +145,7 @@ li {
         margin-bottom: 45px;
         font-size: 12px;
         line-height: 18px;
+        width: 211px;
     }
 
     .image-home {
