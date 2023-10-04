@@ -5,14 +5,16 @@ body {
     color: #242635;
     height: 100vh;
     width: 100%;
-    margin: 0, auto;
+    max-width: 1440px ;
+    margin: 0 auto;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     margin: 50px 50px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .logo {
@@ -28,6 +30,7 @@ nav {
     justify-content: flex-start;
     align-items: baseline;
     width: 100%;
+    max-width: 1440px;
 }
 
 ul {
@@ -76,10 +79,12 @@ li {
     
     .container {
         max-width: 768px;
+        width: 100%;
     }
 
     nav {
         max-width: 768px;
+        width: 100%;
         justify-content: space-around;
     }
 
@@ -96,6 +101,7 @@ li {
     .image-home {
         max-width: 617px;
         max-height: 512px;
+        width: 100%;
     }
 }
 
@@ -103,6 +109,7 @@ li {
     
     .container {
         max-width: 320px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -113,6 +120,7 @@ li {
 
     nav {
         max-width: 320px;
+        width: 100%;
         justify-content: flex-start;
     }
 
@@ -151,6 +159,7 @@ li {
     .image-home {
         max-width: 256px;
         max-height: 284px;
+        width: 100%;
     }
 }
 
